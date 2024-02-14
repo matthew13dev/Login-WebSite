@@ -41,6 +41,10 @@ label .text, label .password{
     padding: 10px;
     font-size: 15px;
     outline: 0;
+    border: 1px solid #ccc;
+}
+label .text:hover, label .password:hover {
+    border: 1px solid #383838;
 }
 
 .submit {
