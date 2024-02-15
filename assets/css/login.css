@@ -28,7 +28,7 @@ body{
     margin: 20px;
 }
 form{
-   
+    width: 100%;
 }
 form label {
     display: block;
