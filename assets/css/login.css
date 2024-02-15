@@ -12,23 +12,34 @@ body{
 }
 #home {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
+    margin-top: 50px;
 
     width: 620px;
-    height: 480px;
+    height: auto;
     box-shadow:  10px 10px #eee;
     border: 1px solid #ccc;
 
 }
+.title {
+    width: 620px;
+    height: 120px;
+    background-color: #383838;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_text {
+    font-size: 50px;
+    color: #fff;
+}
 .container {
     width: 80%;
 }
-.title {
-    font-size: 50px;
-    text-align: center;
-    padding: 20px;
-}
+
 form{
     width: 100%;
     align-items: center;
@@ -67,7 +78,8 @@ label .text:hover, label .password:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 a {
     display: block;
