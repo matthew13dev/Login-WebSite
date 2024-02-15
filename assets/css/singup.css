@@ -26,10 +26,6 @@ body{
     text-align: center;
     margin: 20px;
 }
-.singup_form {
-    
-}
-
 form {
     display: flex;
     flex-direction: column;
