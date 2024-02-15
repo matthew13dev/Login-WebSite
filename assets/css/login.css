@@ -5,35 +5,34 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 #home {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+
+    width: 620px;
+    height: 430px;
     box-shadow:  10px 10px #eee;
-
     border: 1px solid #ccc;
-    width: 600px;
-    height: auto;
 
-    margin-left: 350px;
-    margin-right: 300px;
-
+}
+.container {
+    width: 80%;
 }
 .title {
     font-size: 50px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 20px;
 }
 form{
-    width: 500px;
+   
 }
-form label{
+form label {
     display: block;
-    margin-bottom: 10px;
-    
+    padding: 10px;
 }
 label .text, label .password{
     width: 95%;
@@ -42,6 +41,7 @@ label .text, label .password{
     font-size: 15px;
     outline: 0;
     border: 1px solid #ccc;
+    transition: all 0.01s linear;
 }
 label .text:hover, label .password:hover {
     border: 1px solid #383838;
