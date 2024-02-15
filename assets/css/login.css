@@ -6,7 +6,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #home {
     display: flex;
@@ -14,7 +16,7 @@ body{
     margin-top: 100px;
 
     width: 620px;
-    height: 430px;
+    height: 480px;
     box-shadow:  10px 10px #eee;
     border: 1px solid #ccc;
 
@@ -31,15 +33,17 @@ form{
     width: 100%;
     align-items: center;
 }
-form label{
+label{
     display: block;
     margin: 20px;
 }
-label .text, label .password{
+input {
+    font-size: 15px;
+}
+.text, .password, .submit{
     width: 95%;
     height: auto;
     padding: 10px;
-    font-size: 15px;
     outline: 0;
     border: 1px solid #ccc;
     transition: all 0.01s linear;
@@ -50,10 +54,10 @@ label .text:hover, label .password:hover {
 
 .submit {
     width: 100%;
-    padding: 10px;
-    background-color: #eee;
-    transition: all 0.05s linear;
+    box-shadow: none;
     border: none;
+    transition: all 0.1s linear;
+    background-color: #eee;
 }
 .submit:hover{
     background-color: #ddd;
